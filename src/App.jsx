@@ -126,10 +126,7 @@ function AppContent() {
     saveCart([]);
   };
 
-  const cantidadTotal = carrito.reduce(
-    (sum, item) => sum + Number(item.cantidad || 0),
-    0
-  );
+  const cantidadTotal = carrito.length;
 
   return (
     <>
